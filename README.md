@@ -101,11 +101,15 @@ Basically we keep a develop branch always clean, branch off from there a new fea
 
 
 create a new branch from develop
+
 `git checkout -b feature`
 
 do a commit
+
 `git touch file.txt`
+
 `git add .`
+
 `git commit -m "add file"`
 
 Now imagine that someone else has pushed on develop branch by a merge or pull request.
@@ -120,12 +124,15 @@ You probably need to integrate those changes, so you need to get them, then reba
 `git rebase develop`
 
 if you have conflicts git will tell you.
+
 `git mergetool`
 
 once solved every conflict tell git that you are done.
+
 `git rebase --continue`
 
 you can abort merge at every moment by doing
+
 `git rebase --abort`
 
 Cool, you have have integrated last changes from `develop` in your `feature` branch, and moved on top of the history your previous commits
