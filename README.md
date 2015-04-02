@@ -45,7 +45,7 @@ It’s important to understand that `git checkout -- [file]` is a dangerous comm
 * [Introduction](http://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 
 >To be able to collaborate on any Git project, you need to know how to manage your remote repositories. Remote repositories are versions of your project that are hosted on the Internet or network somewhere.
->
+
 ```shell
 # List them
 git remote -v
@@ -77,10 +77,12 @@ origin	git@github.com:vesparny/git-training.git (push)
 >Because the commit pointed to by the branch you merged in was directly upstream of the commit you’re on, Git simply moves the pointer forward.
 
 * recursive merge
+
 >In this case, your development history has diverged from some older point. Because the commit on the branch you’re on isn’t a direct ancestor of the branch you’re merging in, Git has to do some work. In this case, Git does a simple three-way merge, using the two snapshots pointed to by the branch tips and the common ancestor of the two.
 >
 
 * merge conflicts
+
 >Happens when you changed the same part of the same file differently in the two branches you’re merging together.
 
 This is the perfect situation for using a mergetool,
