@@ -43,6 +43,7 @@ It’s important to understand that `git checkout -- [file]` is a dangerous comm
 
 ## Remotes
 * [Introduction](http://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
+
 >To be able to collaborate on any Git project, you need to know how to manage your remote repositories. Remote repositories are versions of your project that are hosted on the Internet or network somewhere.
 >
 ```shell
@@ -54,6 +55,7 @@ origin	git@github.com:vesparny/git-training.git (push)
 
 ## Branching
 * [Introduction](http://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+
 >When you make a commit, Git stores a commit object that contains a pointer to the snapshot of the content you staged. This object also contains the author’s name and email, the message that you typed, and pointers to the commit or commits that directly came before this commit (its parent or parents): zero parents for the initial commit, one parent for a normal commit, and multiple parents for a commit that results from a merge of two or more branches.
 Branches are just pointers to a specific commit.
 
@@ -71,6 +73,7 @@ origin	git@github.com:vesparny/git-training.git (push)
 ## Merging
 * [Basic Merging](http://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 * fast-forward merge
+
 >Because the commit pointed to by the branch you merged in was directly upstream of the commit you’re on, Git simply moves the pointer forward.
 
 * recursive merge
