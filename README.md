@@ -76,11 +76,13 @@ origin	git@github.com:vesparny/git-training.git (push)
 * recursive merge
 >In this case, your development history has diverged from some older point. Because the commit on the branch you’re on isn’t a direct ancestor of the branch you’re merging in, Git has to do some work. In this case, Git does a simple three-way merge, using the two snapshots pointed to by the branch tips and the common ancestor of the two.
 >
+
 * merge conflicts
 >Happens when you changed the same part of the same file differently in the two branches you’re merging together.
 
 This is the perfect situation for using a mergetool,
 I suggest you [kdiff3](http://kdiff3.sourceforge.net/) which is free, open source and multi-platform.
+
 You can see in this [repository](https://github.com/vesparny/git-training/blob/master/.gitconfig) an example `.gitconfig` file where I configured a mergetool for you.
 
 ## Rebasing
