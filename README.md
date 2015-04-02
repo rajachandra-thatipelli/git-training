@@ -10,6 +10,7 @@ It's also an opensource book and you can grab the code [here](http://git-scm.com
 * [Differences between git and others CVS](http://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
 * [Installation](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Setting up your environment](https://help.github.com/articles/set-up-git/)
+* Ignoring files
 ```
 git config --global user.name "YOUR NAME"
 git config --global user.email "YOUR EMAIL"
@@ -80,6 +81,7 @@ origin	git@github.com:vesparny/git-training.git (push)
 
 This is the perfect situation for using a mergetool,
 I suggest you [kdiff3](http://kdiff3.sourceforge.net/) which is free, open source and multi-platform.
+You can see in this [repository](https://github.com/vesparny/git-training/blob/master/.gitconfig) an example `.gitconfig` file where I configured a mergetool for you.
 
 ## Rebasing
 * [Basic reabasing](http://git-scm.com/book/en/v2/Git-Branching-Rebasing)
@@ -106,9 +108,13 @@ do a commit
 
 Now imagine that someone else has pushed on develop branch by a merge or pull request.
 You probably need to integrate those changes, so you need to get them, then rebase your feature branch onto develop
+
 `git checkout develop`
+
 `git pull origin develop`
+
 `git checkout feature`
+
 `git rebase develop`
 
 if you have conflicts git will tell you.
