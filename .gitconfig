@@ -10,8 +10,8 @@
 
 	# View the current working tree status using the short format
 	s = status -s
-	co = git checkout
-	c = git commit
+	co = checkout
+	c = commit
 
 [apply]
 
